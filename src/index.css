@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+
+root {
+  font-family: 'Oswald', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* {
+  /* border: 1px solid white; */
+}
+
+html {
+  background-color: #333;
+  color: white;
+  font-weight: 200;
+  font-family: 'Oswald', sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  line-height: 0.8;
+}
+
+.header > img {
+  width: 20%;
+  height: 3rem;
+}
+
+.header > h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  margin: 0;
+}
+.wod {
+  width: 80%;
+  margin: auto;
+  padding: 0;
+  margin-top: -1rem;
+}
+
+.wod__obs > p {
+  line-height: 2;
+}
+
+.reps {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 1.5rem;
+  height: 5rem;
+}
+
+.reps__button {
+  width: 33%;
+  height: 100%;
+  border: 1px solid white;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.reps__counter {
+  width: 33%;
+  border: 1px solid white;
+}
+
+.reps__counter > h2,
+.reps__counter > h4 {
+  margin: 0;
+}
+
+.reps__counter > h2 {
+  font-size: 2rem;
+}
+
+.reps__counter > h4 {
+  font-weight: 200;
+}
+
+.wod__description {
+  font-size: 1.5rem;
+  transition: 200ms ease-in-out;
+}
+
+.wod__description_done {
+  color: grey;
+  text-decoration: line-through;
+  transition: 200ms ease-in-out;
+}
+
+.wod__description_queue {
+  color: grey;
+  transition: 200ms ease-in-out;
+}
+
+.donePage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #242424;
+  line-height: 1;
+}
+
+.donePage > h1 {
+  font-size: 5rem;
+}
+
+.donePage__button {
+  font-size: 2rem;
+  color: white;
+  font-weight: 200;
+  font-family: 'Oswald', sans-serif;
+  background-color: #242424;
+  border: 1px solid white;
+  padding-inline: 2rem;
+  margin-top: 3rem;
+}
