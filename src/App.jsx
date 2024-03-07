@@ -6,6 +6,8 @@ import './App.css'
 import DonePage from './components/DonePage'
 import Timer from './components/Timer'
 import WodDescription from './components/WodDescription'
+import Open241 from './components/Open241/Open241'
+import Open242 from './components/Open242/Open242'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -29,10 +31,23 @@ function App() {
     setTotalCount((totalCount) => totalCount +1)
   }
 
+  const handleTenMore = () =>{
+    setCount((count) => count +10)
+    setTotalCount((totalCount) => totalCount +10)
+  }
+
   const handleOneLess = () =>{
     if (totalCount>0 && count>0) {
       setCount((count) => count -1)
       setTotalCount((totalCount) => totalCount -1)
+      console.log(totalCount)
+    }
+  }
+
+  const handleTenLess = () =>{
+    if (totalCount>0 && count>0) {
+      setCount((count) => count -10)
+      setTotalCount((totalCount) => totalCount -10)
       console.log(totalCount)
     }
   }
@@ -49,25 +64,9 @@ function App() {
       {isDone && <DonePage setCount={setCount} setIsDone={setIsDone} setTotalCount={setTotalCount} />}
       <div className='header'>
        <img src={korLogo} className="logo" alt="KOR logo" />
-       <h1>OPEN 24.1</h1>
+       <h1>OPEN 24.2</h1>
       </div>
-      <WodDescription totalCount={totalCount} setQueueType={setQueueType} />
-      {/* <Timer /> */}
-      
-      <div className="reps">
-        <button className='reps__button' 
-          onClick={handleOneLess}>
-          -
-        </button>
-        <div className='reps__counter'>
-          <h2>{count}</h2>
-          <h4>reps</h4>
-        </div>
-        <button className='reps__button' onClick={handleOneMore}>
-          +
-        </button>
-      </div>
-      <h2>TOTAL: {totalCount}</h2>
+      <Open242 />
     </>
   )
 }
