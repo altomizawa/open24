@@ -1,11 +1,9 @@
-import { useState } from "react";
-
 export default function WodDescription(props){
     const {isRowActive, isDeadliftActive, isDoubleUnderActive}= props;
 
     return (
         <div className='wod'>
-        <h2>AMRAP in 20 minutes:</h2>
+        <h2>For Time:</h2>
         <p className={isRowActive ? 'wod__description' : 'wod242__description_done'}>300-meter row</p>
         <p className={isDeadliftActive ? 'wod__description' : 'wod242__description_done'}>10 deadlifts*</p>
         <p className={isDoubleUnderActive ? 'wod__description' : 'wod242__description_done'}>50 double unders</p>

@@ -1,55 +1,64 @@
+.wodDescription__wrapper {
+  /* border: 1px solid white; */
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .wod242__description_done {
-    color: grey;
-    transition: 200ms ease-in-out;
-  }
+  color: grey;
+  transition: 200ms ease-in-out;
+}
 
-  .reps {
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    margin-top: 1.5rem;
-    height: 10rem;
-    overflow: hidden;
-    border: 1px solid white;;
-  }
-  
-  .reps__button {
-    /* width: 8rem; */
-    height: 100%;
-    /* border: 1px solid grey; */
-    font-size: 2rem;
-    font-weight: 600;
-    color: darkslategray
-  }
+.reps {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 1.5rem;
+  height: 10rem;
+  overflow: hidden;
+  border: 1px solid white;
+}
 
-  .reps__button-wrapper{
-    /* border: 1px solid white; */
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 33.333%;
-  }
-  
-  .reps__counter {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-    width: 33%;
-    /* border: 1px solid white; */
-  }
-  
-  .reps__counter > h2,
-  .reps__counter > h4 {
-    margin: 0;
-  }
-  
-  .reps__counter > h2 {
-    font-size: 2rem;
-  }
-  
-  .reps__counter > h4 {
-    font-weight: 200;
-  }
+.reps__button {
+  /* width: 8rem; */
+  height: 100%;
+  /* border: 1px solid grey; */
+  font-size: 2rem;
+  font-weight: 600;
+  color: darkslategray;
+}
+
+.reps__button-wrapper {
+  /* border: 1px solid white; */
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 33.333%;
+}
+
+.reps__counter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 33%;
+  /* border: 1px solid white; */
+}
+
+.reps__counter > h2,
+.reps__counter > h4 {
+  margin: 0;
+}
+
+.reps__counter > h2 {
+  font-size: 2rem;
+}
+
+.reps__counter > h4 {
+  font-weight: 200;
+}
