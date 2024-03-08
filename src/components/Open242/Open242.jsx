@@ -8,6 +8,8 @@ export default function Open242() {
     const [count, setCount] = useState(0)
     const [totalCount, setTotalCount] = useState(0);
 
+    const rounds = Math.floor(totalCount/90)
+
 
     //Activate row
     useEffect(()=>{
@@ -94,7 +96,10 @@ export default function Open242() {
                         </button>
                     </div> 
                 </div>
-                <h2>TOTAL: {totalCount}</h2>
+                <h2 style={{fontSize: '3rem'}}>TOTAL: {totalCount}</h2>
+                <h2>ROUNDS COMPLETOS: {rounds}<br></br>
+                REPS ROUND ATUAL: {totalCount%90}
+                </h2>
             </div>
         </>
     )
