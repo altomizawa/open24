@@ -95,11 +95,11 @@ export default function Open242() {
                         +10
                         </button>
                     </div> 
+                    
                 </div>
-                <h2 style={{fontSize: '3rem'}}>TOTAL: {totalCount}</h2>
-                <h2>ROUNDS COMPLETOS: {rounds}<br></br>
-                REPS ROUND ATUAL: {totalCount%90}
-                </h2>
+                <p style={{fontSize: '1.5rem'}}>ROUNDS COMPLETOS: {rounds}</p>
+                <p style={{fontSize: '1.5rem'}}>REPS ROUND ATUAL: {totalCount%90}</p>
+                <h2 style={{fontSize: '2rem'}}>TOTAL: {totalCount}</h2>
             </div>
         </>
     )
