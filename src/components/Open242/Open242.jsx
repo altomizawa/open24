@@ -13,16 +13,16 @@ export default function Open242() {
   //Activate row
 
   useEffect(()=>{
-    if (totalCount%30===0 && totalCount%40!==0 && totalCount%50!==0) {
+    if (totalCount===30 | totalCount===120 | totalCount ===210 | totalCount===300 | totalCount===390 | totalCount===480 | totalCount===570 | totalCount===660 | totalCount===750 | totalCount===840) {
         setCount(0)
         setIsRowActive(false)
         setIsDeadliftActive(true)
     }
-    else if (totalCount%30!==0 && totalCount%40===0 && totalCount%50!==0){
+    else if (totalCount===40 | totalCount===130 | totalCount ===220 | totalCount===310 | totalCount===400 | totalCount===490 | totalCount===580 | totalCount===670 | totalCount===760 | totalCount===850){
         setCount(0)
         setIsDeadliftActive(false)
         setIsDoubleUnderActive(true)
-    } else if (totalCount%30!==0 && totalCount%40!==0 && totalCount%50===0){
+    } else if (totalCount===90 | totalCount===180 | totalCount ===270 | totalCount===360 | totalCount===450 | totalCount===540 | totalCount===630 | totalCount===720 | totalCount===810 | totalCount===900){
         setCount(0)
         setIsDoubleUnderActive(false)
         setIsRowActive(true)
